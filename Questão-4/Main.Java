@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-            Pix p = new Pix();
-            p.payment();
+           IPaymentStrategy Pix = new Pix();
+           Payment payment = new Payment(Pix);
+           payment.pay();
         };
         
     }
